@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    // overflow-x: hidden;
+    scroll-behavior:smooth
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    // list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    // overflow-x: hidden;
+    
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.modal-overlay {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 41, 41, 0.6);
+    display: none;
+    z-index: 1002;
+}
+
+.modal-overlay--pets {
+    z-index: 1004;
+}
+
+html {
+    // overflow-x: hidden;
+    // margin-right: calc(-1 * (100vw - 100%));
+    
+}
+/*
+При помощи calc(100vw - 100%) можно вычислить ширину скроллбара (а если он не отображается, то будет 0). Идея: при помощи отрицательного margin-right увеличить ширину <html> на эту ширину. При этом появляется горизонтальная полоса прокрутки — ее скрываем*/

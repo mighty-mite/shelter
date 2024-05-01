@@ -1,0 +1,21 @@
+@import 'vendor/normalize';
+
+@import 'common/variables';
+@import 'common/mixins';
+@import 'common/global';
+@import 'common/fonts';
+
+@import 'blocks/header';
+@import 'blocks/logo';
+@import 'blocks/sidebar';
+@import 'blocks/background';
+@import 'blocks/container';
+@import 'blocks/not-only';
+@import 'blocks/about';
+@import 'blocks/friends';
+@import 'blocks/help';
+@import 'blocks/donation';
+@import 'blocks/pets';
+@import 'blocks/popup';
+@import 'blocks/footer';
+@import 'blocks/burger';

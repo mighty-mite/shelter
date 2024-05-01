@@ -1,0 +1,39 @@
+.logo__heading-1{
+    color: $button-normal;
+    font-size: 32px;
+    line-height: 110%;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.logo__heading-1--pets {
+    color: $heading-grey;
+    font-size: 32px;
+    line-height: 110%;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.logo__subheading {
+    color: $white;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    padding-left: 5px;
+}
+
+.logo__subheading--pets {
+    color: $btn-text;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    padding-left: 5px;
+}

@@ -1,0 +1,74 @@
+@mixin btn {
+    box-sizing: border-box;
+    padding: 15px 15px 15px 15px;
+    border-radius: 100px;
+    color: $btn-text;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+    background-color: $button-normal;
+    @include transition;
+        &:hover {
+            background: $button-hover;
+        }
+}
+
+@mixin btn-transparent {
+    padding: 12px 15px 15px 12px;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+    color: $btn-text;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    @include transition;
+        &:hover {
+            background: $button-hover;
+            border-color: $button-hover
+        }
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin transition {
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 600ms;
+}
+
+@mixin heading-2 {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+@mixin heading-2-mob {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+@mixin text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+// @mixin heading-3 {
+//     font-weight: 400;
+//     font-size: 24px;
+//     line-height: 120%;
+// } 

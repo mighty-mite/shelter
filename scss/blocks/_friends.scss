@@ -1,0 +1,203 @@
+.friends {
+    background-color: $bkg-grey;
+}
+
+.friends__container {
+    margin: 0 auto;
+    padding: 81px 0 100px 0;
+}
+
+.friends__heading {
+    @include heading-2;
+    color: $heading-grey;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.friends__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 59px;
+}
+
+.friends__slider {
+    display: flex;
+    gap: 90px;
+
+    // @include transition;
+}
+
+.friends__card {
+    cursor: pointer;
+    background-color: $link-active-main;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include transition;
+
+        &:hover {
+            background-color: $white;
+            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+            .friends__btn {
+                background: $button-hover;
+                border-color: $button-hover
+            }
+        }
+
+}
+
+.friends__arrow {
+    width: 52px;
+    height: 52px;
+    border: 2px solid $button-normal;
+    border-radius: 100px;
+    @include center;
+    @include transition;
+    background-color: transparent;
+        &:hover {
+            background-color: $button-hover;
+            border-color: $button-hover;
+        }
+}
+
+.friends__img {
+    margin-bottom: 28px;
+    display: block;
+}
+
+.friends__card-heading {
+    @include text;
+    letter-spacing: 1px;
+    color: $heading-grey;
+    margin-bottom: 30px;
+}
+
+.friends__btn {
+    @include btn-transparent;
+    margin-bottom: 30px;
+    width: 187px
+}
+
+
+.friends__window {
+    overflow-x: hidden;
+    width: 990px;
+}
+
+.friends__link {
+    width: 261px;
+    @include btn;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: $btn-text;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+
+
+@media(max-width: 1279px) {
+
+    .friends__window {
+        width: 580px;
+    }
+
+    .friends__wrapper {
+        justify-content: space-around;
+    }
+
+    
+    .friends__slider {
+        gap: 40px;
+    }
+
+}
+
+@media(max-width: 768px) {
+
+    .friends__wrapper {
+        justify-content: space-between;
+    }
+
+    
+
+}
+
+@media(max-width: 767px) {
+
+    .friends__heading {
+        @include heading-2-mob;
+        margin-bottom: 42px
+    }
+
+    .friends__window {
+        width: 270px;
+    }
+
+    .friends__wrapper {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .friends__container {
+        padding: 42px 0 42px 0;
+    }
+
+    .friends__wrapper {
+        display: grid;
+        grid-template-areas: 
+        'card card'
+        'btn btn';
+        grid-template-rows: 435px 52px;
+        grid-template-columns: 1fr 1fr;
+
+        justify-items: center;
+        row-gap: 20px;
+
+        margin-bottom: 42px
+    }
+
+    .friends__window {
+        grid-area: card;
+    }
+
+    .friends__btn {
+        grid-area: btn;
+    }
+
+    .left {
+        justify-self: flex-end;
+        margin-right: 40px;
+    }
+
+    .right {
+        justify-self: start;
+        margin-left: 40px;
+    }
+
+}

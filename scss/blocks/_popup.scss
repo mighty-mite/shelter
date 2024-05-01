@@ -1,0 +1,159 @@
+.popup {
+    width: 900px;
+    // height: 500px;
+    display: flex;
+    margin: 0 auto;
+    background-color: $link-active-main;
+    border-radius: 9px;
+
+    position: fixed;
+    left: -200%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1006;
+
+    transition: .6s ease-out;
+}
+
+.popup__heading {
+    @include heading-2;
+    margin-bottom: 10px;
+}
+
+.popup__subheading {
+    @include text;
+    letter-spacing: 0.06em;
+    margin-bottom: 40px;
+}
+
+.popup__text {
+    padding: 50px 20px 50px 30px;
+    position: relative;
+}
+
+.popup__info {
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    margin-bottom: 40px;
+}
+
+.popup__list {
+    padding-left: 14px;
+}
+
+.popup__item {
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 2px;
+    margin-bottom: 13px;
+}
+
+.popup__main {
+    font-weight: 700;
+}
+
+.popup__btn {
+    border-radius: 100px;
+    border: 2px solid $button-normal;
+    color: $btn-text;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    background: transparent;
+    position: absolute;
+    top: -53px;
+    right: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include transition;
+        &:hover{
+            background-color: $button-hover;
+            border-color: $button-hover
+        }
+}
+
+.popup__item::marker {
+    color: $button-normal;
+}
+
+.popup__img {
+    height: 500px;
+    width: 500px;
+}
+
+
+@media(max-width: 1279px) {
+
+    .popup {
+        width: 630px;
+    }
+
+    .popup__text {
+        padding: 10px 7px 10px 11px;
+    }
+   
+    .popup__img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .popup__info {
+        font-size: 13px;
+    }
+
+    .popup__subheading {
+        margin-bottom: 20px
+    }
+
+    .popup__info {
+        margin-bottom: 20px;
+    }
+
+    .popup__item {
+        margin-bottom: 5px
+    }
+}
+    
+
+@media(max-width: 767px) {
+
+    .popup {
+        width: 240px;
+        word-break: break-word;
+    }
+
+    .popup__img {
+        display: none;
+    }
+
+    .popup__subheading {
+        text-align: center;
+    }
+
+    .popup__text {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 240px;
+    }
+
+    .popup__info {
+        text-align: justify
+    }
+
+    .popup__list {
+        align-self: flex-start;
+    }
+
+    .popup__btn {
+        right: -29px;
+    }
+
+    .popup__item {
+        margin-bottom: 8px;
+    }
+
+}

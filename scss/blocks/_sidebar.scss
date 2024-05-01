@@ -1,0 +1,64 @@
+.sidebar {
+    display: block;
+    position: fixed;
+    z-index: 1003;
+    top: 0;
+    right: -400px;
+    background-color: $btn-text;
+    width: 320px;
+    height: auto;
+    @include transition;
+}
+
+.sidebar--pets {
+    z-index: 1005;
+    position: fixed;
+}
+
+.sidebar__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    list-style: none;
+    height: 100vh;
+}
+
+.sidebar__logo {
+    align-self: flex-start;
+    margin-bottom: 158px;
+    margin-bottom: 158px;
+}
+
+.sidebar__item {
+    margin-bottom: 42px;
+}
+
+.sidebar__link {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    color: $link-normal-main;
+    @include transition;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: transparent;
+        @include transition;
+    }
+        &:hover {
+            color: $link-active-main;
+            &::after {
+                bottom: -7px;
+                background-color: $button-normal;
+            }
+        }
+        &:active {
+            color: $link-active-main;
+        }
+}
