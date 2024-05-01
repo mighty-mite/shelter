@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Our Pets</title>
+  </head>
+  <body>
+    <div class="burger burger--pets">
+      <svg class="burger__icon--pets">
+        <use xlink:href="../../assets/icons/sprite.svg#icon-burger"></use>
+      </svg>
+    </div>
+    <nav class="sidebar sidebar--pets">
+      <div class="sidebar__list">
+        <a href="#" class="logo sidebar__logo">
+          <p class="logo__heading-1">Cozy House</p>
+          <p class="logo__subheading">Shelter for pets in Boston</p>
+        </a>
+        <div class="sidebar__item">
+          <a href="../main/index.html" class="sidebar__link"
+            >About the shelter</a
+          >
+        </div>
+        <div class="sidebar__item">
+          <a href="#" class="sidebar__link current">Our pets</a>
+        </div>
+        <div class="sidebar__item">
+          <a href="../main/index.html#help" class="sidebar__link"
+            >Help the shelter</a
+          >
+        </div>
+        <div class="sidebar__item">
+          <a href="#contacts" class="sidebar__link">Contacts</a>
+        </div>
+      </div>
+    </nav>
+    <header class="header header--pets">
+      <div class="header__container header__container--pets container">
+        <h1 class="visually-hidden">Our Pets</h1>
+        <a href="../main/index.html" class="logo header__logo">
+          <p class="logo__heading-1--pets">Cozy House</p>
+          <p class="logo__subheading--pets">Shelter for pets in Boston</p>
+        </a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="../main/index.html" class="header__link--pets"
+                >About the shelter</a
+              >
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link--pets current">Our pets</a>
+            </li>
+            <li class="header__item">
+              <a href="../main/index.html#help" class="header__link--pets"
+                >Help the shelter</a
+              >
+            </li>
+            <li class="header__item">
+              <a href="#contacts" class="header__link--pets">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="pets">
+        <div class="pets__container container">
+          <h2 class="pets__heading">
+            Our friends who<br />
+            are looking for a house
+          </h2>
+          <div class="pets__window">
+            <ul class="pets__slider"></ul>
+          </div>
+          <div class="pets__controls">
+            <button class="pets__first inactive">
+              <span class="material-icons-outlined">
+                keyboard_double_arrow_left
+              </span>
+            </button>
+            <button class="pets__prev inactive">
+              <span class="material-icons-outlined"> chevron_left </span>
+            </button>
+            <div class="pets__num"></div>
+            <button class="pets__next">
+              <span class="material-icons-outlined"> navigate_next </span>
+            </button>
+            <button class="pets__last">
+              <span class="material-icons-outlined">
+                keyboard_double_arrow_right
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="popup">
+        <img
+          class="popup__img"
+          src="../../assets/images/jennifer.png"
+          alt="cute puppy"
+          width="500"
+        />
+        <div class="popup__text">
+          <h2 class="popup__heading">Jennifer</h2>
+          <p class="popup__subheading">Dog - Labrador</p>
+          <p class="popup__info">
+            Jennifer is a sweet 2 months old Labrador that is patiently waiting
+            to find a new forever home. This girl really enjoys being able to go
+            outside to run and play, but won't hesitate to play up a storm in
+            the house if she has all of her favorite toys.
+          </p>
+          <ul class="popup__list">
+            <li class="popup__item">
+              <span class="popup__main">Age: </span>2 months
+            </li>
+            <li class="popup__item">
+              <span class="popup__main">Inoculations: </span>none
+            </li>
+            <li class="popup__item">
+              <span class="popup__main">Diseases: </span>none
+            </li>
+            <li class="popup__item">
+              <span class="popup__main">Parasites: </span>none
+            </li>
+          </ul>
+          <button class="popup__btn">
+            <span class="material-icons-outlined"> close </span>
+          </button>
+        </div>
+      </div>
+      <div class="modal-overlay modal-overlay--pets"></div>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="footer__container container">
+        <div class="footer__info footer__contacts">
+          <h2 class="footer__heading">For questions and suggestions</h2>
+          <a
+            href="mailto:email@shelter.com"
+            class="footer__link footer__link-contacts"
+          >
+            <svg class="footer__icon-mail footer__svg">
+              <use xlink:href="../../assets/icons/sprite.svg#icon-mail"></use>
+            </svg>
+            <p class="footer__text">email@shelter.com</p>
+          </a>
+          <a href="tel:+136745677554" class="footer__link">
+            <svg class="footer__icon-phone footer__svg">
+              <use xlink:href="../../assets/icons/sprite.svg#icon-phone"></use>
+            </svg>
+            <p class="footer__text">+13 674 567 75 54</p>
+          </a>
+        </div>
+        <div class="footer__info footer__adress">
+          <h2 class="footer__heading">We are waiting for your visit</h2>
+          <a
+            href="https://www.google.ru/maps/place/L.E.K.+Consulting/@42.3573523,-71.0522365,17z/data=!3m1!5s0x89e49e2d13464d0d:0x811ae1b02cd2bea5!4m5!3m4!1s0x89e37085b4b0d84b:0x6eec641e814ac01a!8m2!3d42.358662!4d-71.055065?hl=ru"
+            class="footer__link footer__link-adress"
+            target="_blank"
+          >
+            <svg class="footer__icon-pin-1 footer__svg">
+              <use xlink:href="../../assets/icons/sprite.svg#icon-pin"></use>
+            </svg>
+            <p class="footer__text">
+              1 Central Street, Boston (entrance from the store)
+            </p>
+          </a>
+          <a
+            href="https://www.google.ru/maps/place/St+John+of+God+Hospitaller+Services/@51.7486049,-0.2348958,20z/data=!4m12!1m6!3m5!1s0x48763c8af0648b9f:0x354efd8b66d5e61e!2sSt+John+of+God+Hospitaller+Services!8m2!3d51.7485754!4d-0.2350017!3m4!1s0x48763c8af0648b9f:0x354efd8b66d5e61e!8m2!3d51.7485754!4d-0.2350017?hl=ru"
+            class="footer__link footer__link-adress"
+            target="_blank"
+          >
+            <svg class="footer__icon-pin footer__svg">
+              <use xlink:href="../../assets/icons/sprite.svg#icon-pin"></use>
+            </svg>
+            <p class="footer__text">18 South Park, London</p>
+          </a>
+        </div>
+        <img
+          src="../../assets/images/footer-puppy.png"
+          alt="cute puppy"
+          class="footer__img"
+        />
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
